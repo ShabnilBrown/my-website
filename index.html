@@ -3,65 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Website</title>
+    <title>My GitHub Page</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h1>XYZ College <i class="fas fa-graduation-cap"></i></h1>
-        <nav>
-            <ul>
-                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#admission"><i class="fas fa-user-edit"></i> Admissions</a></li>
-                <li><a href="#programs"><i class="fas fa-book"></i> Programs</a></li>
-                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="home" class="hero">
-        <img src="college-campus.jpg" alt="College Campus" class="hero-image">
-        <h2>Welcome to XYZ College</h2>
-        <p>Excellence in education for a brighter future.</p>
-        <a href="#admission" class="btn">Apply Now</a>
-    </section>
+    <div class="container">
+        <h1>Welcome to My Website</h1>
+        <p>This is a simple webpage hosted on GitHub Pages.</p>
+        <button onclick="changeText()">Click Me</button>
+        <p id="message"></p>
+    </div>
 
-    <section id="admission" class="admission-form">
-        <h2>Admissions <i class="fas fa-user-graduate"></i></h2>
-        <form>
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
-            
-            <label for="program">Select Program:</label>
-            <select id="program" name="program">
-                <option value="computer-science">Computer Science</option>
-                <option value="business">Business</option>
-                <option value="engineering">Engineering</option>
-            </select>
-            
-            <button type="submit"><i class="fas fa-paper-plane"></i> Submit Application</button>
-        </form>
-    </section>
-
-    <section id="programs" class="programs">
-        <h2>Our Programs <i class="fas fa-chalkboard-teacher"></i></h2>
-        <div class="program-card">Computer Science</div>
-        <div class="program-card">Business Management</div>
-        <div class="program-card">Engineering</div>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2>Contact Us <i class="fas fa-phone-alt"></i></h2>
-        <p><i class="fas fa-envelope"></i> Email: info@xyzcollege.edu</p>
-        <p><i class="fas fa-phone"></i> Phone: +123-456-7890</p>
-        <p><i class="fas fa-map-marker-alt"></i> Address: 123 College Street, City, Country</p>
-    </section>
+    <script src="script.js"></script>
 </body>
 </html>
